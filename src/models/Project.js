@@ -10,6 +10,7 @@ export const Project = sequelize.define("projects", {
   },
   name: {
     type: DataTypes.STRING,
+    unique: true
   },
   priority: {
     type: DataTypes.INTEGER,

@@ -12,11 +12,12 @@ export const Task = sequelize.define(
     },
     name: {
       type: DataTypes.STRING,
+      unique: true,
     },
     done: {
       type: DataTypes.BOOLEAN,
       defaultValue: false,
-    }
+    },
   },
   {
     timestamps: false,
